@@ -21,7 +21,7 @@ RUN git clone https://github.com/vpeddu/CLOMP.git
 
 
 # TODO FIXME (where it says ???)
-RUN sed -i.bak  's@/tools/Trimmomatic-0.38/trimmomatic-0.38.jar@/Trimmomatic-0.39/trimmomatic-0.39.jar@' -e 's@/tools/Trimmomatic-0.38/adapters/adapters.fa@/Trimmomatic-0.39/adapters/???@'   CLOMP/CLOMP.ini
+RUN sed -i.bak  -e 's@/tools/Trimmomatic-0.38/trimmomatic-0.38.jar@/Trimmomatic-0.39/trimmomatic-0.39.jar@' -e 's@/tools/Trimmomatic-0.38/adapters/adapters.fa@/Trimmomatic-0.39/adapters/???@'   CLOMP/CLOMP.ini
 
 # install bowtie2
 RUN curl -L https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.4.3/bowtie2-2.3.4.3-linux-x86_64.zip/download > bowtie2-2.3.4.3.zip
